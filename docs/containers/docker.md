@@ -305,6 +305,8 @@ services:
     extra_hosts:  # add hostname mappings to container network interface config
       - <hostname>:<ip>
       - <hostname>:host-gateway  # map host machine network
+    profiles:  # partition services into sets
+      - <profile_name>
     networks:  # attach container to one or more networks
       - <network_name>
     depends_on:  # make sure dependencies are running before this container
