@@ -244,6 +244,26 @@ docker network create --driver NETWORK_TYPE --subnet GATEWAY_TP/SUBNET_MASK_SIZE
 
 Docker has an internal DNS that allows finding other container by their name instead of their IP. The DNS always runs at the address `127.0.0.11`.
 
+### Exposing Ports
+
+By default, containers on bridge networks don't expose any ports to the outside world. Using the `--publish` or `-p` flag makes a port available to services outside the bridge network. This creates a firewall rule in the host, mapping a container port to a port on the Docker host to the outside world.
+
+Here are some examples:
+
+| Flag value | Description |
+|------------|-------------|
+| `-p 8080:80` | Map port `8080` on the host to **TCP** port `80` in the container. |
+| `-p 192.168.1.100:8080:80` | Map port `8080` on the host IP `192.168.1.100` to **TCP** port `80` in the container. |
+| `-p 8080:80/udp` | Map port `8080` on the host to **UDP** port `80` in the container. |
+| `-p 8080:80/tcp -p 8080:80/udp` | Map **TCP** and **UDP** port `8080` on the host to TCP and UDP port `80` in the container. |
+
+> **Warn**: Publishing container ports is *insecure by default*. A published port it becomes available not only to the host, but to the outside world as well.  
+> If the localhost IP address (`127.0.0.1`, or `::1`) is included with the publish flag, only the host and its containers can access the published container port.
+>
+> ```sh
+> docker run --publish 127.0.0.1:8080:80 --publish '[::1]:8080:80' nginx
+> ```
+
 ---
 
 ## Docker Storage
