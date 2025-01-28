@@ -184,7 +184,8 @@ nav:
         - Scripting: languages/bash/scripting.md
         - Commands: languages/bash/commands.md
   - Misc:
-    - Git: misc/git.md
+    - VCS:
+      - Git: misc/vcs/git.md
     - GraphQL: misc/graph-ql.md
     - RegEx: misc/regular-expressions.md
     - SSH: misc/ssh.md
