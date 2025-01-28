@@ -186,6 +186,7 @@ nav:
   - Misc:
     - VCS:
       - Git: misc/vcs/git.md
+      - JJ: misc/vcs/jj.md
     - GraphQL: misc/graph-ql.md
     - RegEx: misc/regular-expressions.md
     - SSH: misc/ssh.md
