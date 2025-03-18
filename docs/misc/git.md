@@ -187,6 +187,7 @@ It's generally recommended creating annotated tags so it's possible to have all 
 `git merge --continue`: continue previous merge after solving a merge conflict  
 `git rebase <branch>`: rebase current branch commits onto another branch  
 `git rebase --onto <new-base> <old-base>`: rebase a slice of commits from `<old-base>` onto `<new-base>`  
+`git rebase --onto <new-base> --root <old-base>`: rebase a slice of commits from `<old-base>` onto `<new-base>`, including the root commit  
 
 `git cherry-pick <commit>`: bring in a commit from another branch  
 `git cherry-pick <commit>..<commit>`: bring in a range of commits from another branch (first excluded)  
