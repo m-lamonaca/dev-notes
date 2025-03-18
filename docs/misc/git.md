@@ -180,6 +180,7 @@ It's generally recommended creating annotated tags so it's possible to have all 
 `git branch -d|--delete <branch-name>`: delete specified branch  
 `git branch -m|--move <old_name> <new_name>`: rename a branch without affecting the branch's history  
 `git switch -c <branch-name>`: create a branch and switches to  
+`git switch --orphan <branch-name>`: create an new un-rooted branch from scratch  
 `git switch <branch-name>`: change current branch (update HEAD) and update working directory  
 
 `git merge <branch-name>`: merges into current branch  
