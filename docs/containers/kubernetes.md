@@ -66,7 +66,7 @@ Because Secrets can be created independently of the Pods that use them, there is
 
 **Volumes** are physical storage attached to a pod in order to persist data when a pod is shut down.
 
-> **Warn**: kubernetes dows not manage data persistance. Backups must be managed externally.
+> **Warn**: kubernetes does not manage data persistance. Backups must be managed externally.
 
 ### Deployment
 
