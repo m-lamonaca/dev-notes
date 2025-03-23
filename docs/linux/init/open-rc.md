@@ -1,6 +1,7 @@
 # [OpenRC](https://github.com/OpenRC/openrc/blob/master/user-guide.md)
 
-**OpenRC** is a dependency-based init system for Unix-like systems that maintains compatibility with the system-provided init system, normally located in /sbin/init. OpenRC is Gentoo's native init system, although other init systems are available.
+**OpenRC** is a dependency-based init system for Unix-like systems that maintains compatibility with the system-provided init system, normally located in `/sbin/init`.  
+OpenRC is Gentoo's native init system, although other init systems are available.
 
 OpenRC will start necessary system services in the correct order at boot, manage them while the system is in use, and stop them at shutdown. It can manage daemons installed from the Gentoo repository, can optionally supervise the processes it launches, and has an the possibility to start processes in parallel - when possible - to shorten boot time.
 
@@ -34,7 +35,7 @@ The default startup uses the runlevels `sysinit`, `boot`, and `default`, in that
 
 ### Managing Services
 
-Any service can, at any time, be started/stopped/restarted by executing with the `rc-service` helper  someservice start, rc-service someservice stop, etc.
+Any service can, at any time, be started/stopped/restarted by executing with the `rc-service` helper:
 
 ```sh
 rc-service <service> start
@@ -44,7 +45,7 @@ rc-service <service> status
 rc-service <service> zap
 ```
 
-Another, less preferred method, is to run the service script directly, e.g. /etc/init.d/service start, /etc/init.d/service stop, etc.
+Another, less preferred method, is to run the service script directly:
 
 ```sh
 /etc/init.d/<service> start
@@ -53,6 +54,8 @@ Another, less preferred method, is to run the service script directly, e.g. /etc
 /etc/init.d/<service> status
 /etc/init.d/<service> zap
 ```
+
+> **Note**: the configuration for each service is in `/etc/conf.d/<service>`
 
 There is a special command `zap` that makes OpenRC 'forget' that a service is started. This is mostly useful to reset a crashed service to stopped state without invoking the (possibly broken) stop function of the service script.
 
