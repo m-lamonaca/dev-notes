@@ -402,14 +402,19 @@ It is possible to declare functions **after** the main only if the *prototype* i
 To return multiple variables those variables can be passed by reference so that their values is adjourned in the main.
 
 ```c
-type function_name(type argument1, ...); // function prototype
+// function prototype (usually in a .h file)
+type function_name(type argument1, ...); 
 
-type functionName (parameters) {
+// function implementation (usually in a .c file)
+type function_name (parameters) {
     return <expression>;
 }
 
-void functionName (parameters) { }
+// function without a return value
+void function_name (parameters) { }
 ```
+
+> **Note**: annotatic a function with `static` makes it visible only inside the file in which is implemented/declared
 
 ### Arguments passed by reference without pointers
 
@@ -421,9 +426,9 @@ type functionName (type &argument1, ...) {
     //code here
     return <expression>;
 }
-```
 
-`functionName (arguments);`
+function_name (argument_1, ...);
+```
 
 ### Arguments passed by reference with pointers
 
@@ -435,9 +440,9 @@ type function_name (type *argument_1, ...) {
     instructions;
     return <expression>;
 }
-```
 
-`function_name (&argument_1, ...);`
+function_name (&argument_1, ...);
+```
 
 ## Arrays
 
