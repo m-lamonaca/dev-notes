@@ -316,13 +316,6 @@ string.c_str();    //reads string char by char
 string.find(substring);    // The zero-based index of the first character in string object that matches the requested substring or characters
 ```
 
-## Vectors
-
-```c
-#include <vector>
-vector<type> vector_name = {values};    //variable length array
-```
-
 ## Decision Statements
 
 ### If Statements
