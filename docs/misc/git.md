@@ -228,6 +228,7 @@ A repository has one main worktree (if it’s not a bare repository) and zero or
 `git rebase -i|--interactive <commit>`: modify (reword, edit, drop, squash, merge, ...) *from* commit to latest  
 `git rebase --autostash`: automatically create a temporary stash entry before rebasing  
 `git rebase --autosquash`: automatically apply "squash!" or "fixup!" or "amend!" commits  
+`git rebase --committer-date-is-author-date`: use the author date of the commit being rebased as the committer date (instead of current time)  
 
 ## [Git Revisions](https://git-scm.com/docs/gitrevisions)
 
