@@ -102,7 +102,10 @@ The *subexpression* is any valid regular expression pattern. The noncapturing gr
 (?= subexpression)
 ```
 
-The *subexpression* is any regular expression pattern. For a match to be successful, the input string must match the regular expression pattern in subexpression, although the matched substring is not included in the match result. A zero-width positive lookahead assertion does not backtrack.
+The *subexpression* is any regular expression pattern. For a match to be successful, `subexpression` *must occur* in the input string to the **right** of the current position.
+
+> **Note**: `subexpression` is not included in the match result.  
+> **Note**: A zero-width positive lookahead assertion does not backtrack.
 
 Typically, a zero-width positive lookahead assertion is found at the end of a regular expression pattern. It defines a substring that must be found at the end of a string for a match to occur but that should not be included in the match. It is also useful for preventing excessive backtracking.
 
@@ -114,7 +117,10 @@ It's possible to use a zero-width positive lookahead assertion to ensure that a 
 (?! subexpression)
 ```
 
-The *subexpression* is any regular expression pattern. For the match to be successful, the input string must not match the regular expression pattern in subexpression, although the matched string is not included in the match result.
+The *subexpression* is any regular expression pattern. For a match to be successful, `subexpression` *must not occur* in the input string to the **right** of the current position.
+
+> **Note**: `subexpression` is not included in the match result.  
+> **Note**: A zero-width negative lookahead assertion does not backtrack.
 
 A zero-width negative lookahead assertion is typically used either at the beginning or at the end of a regular expression. At the beginning of a regular expression, it can define a specific pattern that should not be matched when the beginning of the regular expression defines a similar but more general pattern to be matched. In this case, it is often used to limit backtracking. At the end of a regular expression, it can define a subexpression that cannot occur at the end of a match.
 
@@ -124,7 +130,10 @@ A zero-width negative lookahead assertion is typically used either at the beginn
 (?<= subexpression)
 ```
 
-The *subexpression* is any regular expression pattern. For a match to be successful, subexpression must occur at the input string to the left of the current position, although subexpression is not included in the match result. A zero-width positive lookbehind assertion does not backtrack.
+The *subexpression* is any regular expression pattern. For a match to be successful, `subexpression` *must occur* in the input string to the **left** of the current position.
+
+> **Note**: `subexpression` is not included in the match result.  
+> **Note**:A zero-width positive lookbehind assertion does not backtrack.
 
 Zero-width positive lookbehind assertions are typically used at the beginning of regular expressions. The pattern that they define is a precondition for a match, although it is not a part of the match result.
 
@@ -132,17 +141,19 @@ Zero-width positive lookbehind assertions are typically used at the beginning of
 
 ```regex title="Regex Syntax"
 (?<! subexpression)
-(?> subexpression)
 ```
 
-Hte *subexpression* is any regular expression pattern. For a match to be successful, subexpression must not occur at the input string to the left of the current position. However, any substring that does not match subexpression is not included in the match result.
+The *subexpression* is any regular expression pattern. For a match to be successful, `subexpression` *must not occur* in the input string to the **left** of the current position.
+
+> **Note**: `subexpression` is not included in the match result.  
+> **Note**: A zero-width negative lookbehind assertion does not backtrack.
 
 Zero-width negative lookbehind assertions are typically used at the beginning of regular expressions. The pattern that they define precludes a match in the string that follows. They are also used to limit backtracking when the last character or characters in a captured group must not be one or more of the characters that match that group's regular expression pattern.
 
 ### Atomic groups
 
 ```regex title="Regex Syntax"
-(?> subexpression )
+(?> subexpression)
 ```
 
 The *subexpression* is any regular expression pattern.
