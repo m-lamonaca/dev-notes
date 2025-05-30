@@ -107,8 +107,9 @@ docker image pull <image>  # download an image w/o starting the container
 ### [`docker build`](https://docs.docker.com/engine/reference/commandline/build/)
 
 ```sh
-docker build -t <tag> -f <dockerfile> <context>  # build image with specific tag (usually user/app:version)
-docker build -t <tag> -f <dockerfile> --build-arg ARG=value <context>  # pass args to ARG steps
+docker build --tag <tag> --file <dockerfile> <context>  # build image with specific tag (usually user/app:version)
+docker build --tag <tag> --file <dockerfile> --build-arg ARG=value <context>  # pass args to ARG steps
+docker build --tag <tag> --file <dockerfile> --secret id=<id>,env=<ENV-VAR> <context>  # mount secret as /run/secrets/<id> and $ENV-VAR
 ```
 
 ### [`docker push`](https://docs.docker.com/engine/reference/commandline/push/)
