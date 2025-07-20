@@ -199,3 +199,4 @@ nav:
       - System Init:
         - Systemd: linux/init/systemd.md
         - OpenRC: linux/init/open-rc.md
+        - Runit: linux/init/runit.md
