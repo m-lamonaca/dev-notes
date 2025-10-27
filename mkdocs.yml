@@ -49,6 +49,12 @@ theme:
       primary: orange
       accent: deep orange
 
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
   features:
     - navigation.instant
     - navigation.indexes
