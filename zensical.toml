@@ -1,0 +1,234 @@
+[project]
+site_name = "Dev Notes"
+repo_url = "https://github.com/m-lamonaca/dev-notes"
+repo_name = "GitHub"
+edit_uri = "/blob/main/docs"
+remote_branch = "gh-pages"
+remote_name = "origin"
+site_url = "http://m-lamonaca.github.io/dev-notes"
+site_author = "Marcello Lamonaca"
+copyright = "MIT"
+
+docs_dir = "docs"
+site_dir = "site"
+
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+auto_title = true
+linenums = true
+linenums_style = "table"
+pygments_lang_class = true
+line_spans = "__span"
+
+[project.markdown_extensions.pymdownx.keys]
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.smartsymbols]
+[project.markdown_extensions.pymdownx.snippets]
+[project.markdown_extensions.pymdownx.superfences]
+[project.markdown_extensions.pymdownx.tabbed]
+
+[markdown_extensions.zensical.extensions.preview.configurations]
+ targets.include = [
+    "customization.md",
+    "setup/extensions/*"
+]
+
+# [project.plugins.offline]
+ 
+[project.plugins.social]
+
+[[project.extra.social]]
+icon = "fontawesome/brands/mastodon"
+link = "https://hachyderm.io/@m_lamonaca"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/m-lamonaca"
+
+[project.theme]
+variant = "classic"
+language = "en"
+icon.logo = "fontawesome/solid/code"
+features = [
+    "content.code.copy",
+    "content.code.select",
+    "navigation.footer",
+    "navigation.indexes",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    "navigation.instant.progress",
+    "navigation.path",
+    "navigation.pruning",
+    "navigation.sections",
+    "navigation.tabs",
+    "navigation.tabs.sticky",
+    "navigation.top",
+    "navigation.tracking",
+    "search.highlight",
+    "toc.follow",
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "orange"
+accent = "deep orange"
+toggle = { icon = "material/brightness-7", name = "Switch to dark mode" }
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "orange"
+accent = "deep orange"
+toggle = { icon = "material/brightness-4", name = "Switch to light mode" }
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle = { icon = "material/brightness-auto", name = "Switch to light mode" }
+
+[[nav]]
+Home = "README.md"
+
+[[nav.Containers]]
+Docker = "containers/docker.md"
+Kubernetes = "containers/kubernetes.md"
+
+[[nav.Databases]]
+Redis = "databases/redis.md"
+SQL = "databases/sql.md"
+MongoDB = "databases/mongo-db.md"
+
+[[nav.Languages]]
+HTML = "languages/html/html.md"
+Markdown = "languages/markdown.md"
+CSS = "languages/css/css.md"
+C = "languages/c/c.md"
+Kotlin = "languages/kotlin/kotlin.md"
+Swift = "languages/swift/swift.md"
+
+[[nav.Languages.Assembly]]
+Intel = "languages/assembly/intel.md"
+RISC-V = "languages/assembly/riscv.md"
+
+[[nav.Languages.Python]]
+Python = "languages/python/python.md"
+
+[[nav.Languages.Python.Modules]]
+argparse = "languages/python/modules/argparse.md"
+collection = "languages/python/modules/collections.md"
+csv = "languages/python/modules/csv.md"
+ftplib = "languages/python/modules/ftplib.md"
+itertools = "languages/python/modules/itertools.md"
+json = "languages/python/modules/json.md"
+logging = "languages/python/modules/logging.md"
+shutil = "languages/python/modules/shutil.md"
+smtplib = "languages/python/modules/smtplib.md"
+socket = "languages/python/modules/socket.md"
+sqlite = "languages/python/modules/sqlite.md"
+"time & datetime" = "languages/python/modules/time-datetime.md"
+unittest = "languages/python/modules/unittest.md"
+
+[[nav.Languages.Python.Libraries]]
+TKinter = "languages/python/libs/tkinter.md"
+Numpy = "languages/python/libs/numpy.md"
+Pandas = "languages/python/libs/pandas.md"
+Seaborn = "languages/python/libs/seaborn.md"
+Requests = "languages/python/libs/requests.md"
+"Beatiful Soup" = "languages/python/libs/beautiful-soup.md"
+
+[[nav.Languages.".NET"."C#"]]
+"C#" = "languages/dotnet/csharp/csharp.md"
+Linq = "languages/dotnet/csharp/linq.md"
+Collections = "languages/dotnet/csharp/collections.md"
+"Reactive Extensions" = "languages/dotnet/csharp/reactive-extensions.md"
+"Async Programming" = "languages/dotnet/csharp/async-programming.md"
+"Unit Tests" = "languages/dotnet/csharp/unit-tests.md"
+
+[[nav.Languages.".NET"."ASP.NET"]]
+"Minimal API" = "languages/dotnet/asp.net/minimal-api.md"
+FIlters = "languages/dotnet/asp.net/filters.md"
+Middleware = "languages/dotnet/asp.net/middleware.md"
+"Razor Syntax" = "languages/dotnet/asp.net/razor-syntax.md"
+Blazor = "languages/dotnet/asp.net/blazor.md"
+SignalR = "languages/dotnet/asp.net/signalr.md"
+"Web Forms" = "languages/dotnet/asp.net/web-forms.md"
+
+[[nav.Languages.".NET".Database]]
+"ADO.NET" = "languages/dotnet/database/ado.net.md"
+"Entity Framework" = "languages/dotnet/database/entity-framework.md"
+
+[[nav.Languages.Java]]
+Java = "languages/java/java.md"
+"Java Collection Framework" = "languages/java/java-collection-framework.md"
+DAO = "languages/java/dao.md"
+
+[[nav.Languages.Java.Web]]
+Serverlet = "languages/java/web/servlet.md"
+
+[[nav.Languages.Java.Web.Spring]]
+POM = "languages/java/spring/pom.xml.md"
+"Project Structure" = "languages/java/spring/spring-project.md"
+
+[[nav.Languages.PHP]]
+PHP = "languages/php/php.md"
+Database = "languages/php/database.md"
+Web = "languages/php/web.md"
+"Dependency Injection" = "languages/php/dependency-injection.md"
+"Unit Tests" = "languages/php/unit-tests.md"
+Composer = "languages/php/composer.md"
+"PSR 7" = "languages/php/psr-7.md"
+Plates = "languages/php/plates-templating.md"
+
+[[nav.Languages.PHP."Simple MVC"]]
+"Simple MVC" = "languages/php/simple-mvc/simple-mvc.md"
+"REST API" = "languages/php/simple-mvc/rest-api.md"
+
+[[nav.Languages.Rust]]
+Rust = "languages/rust/rust.md"
+Macros = "languages/rust/macros.md"
+Cargo = "languages/rust/cargo.md"
+Concurrency = "languages/rust/concurrency.md"
+"Unit Tests" = "languages/rust/unit-tests.md"
+
+[[nav.Languages.Javascript]]
+Javascript = "languages/javascript/javascript.md"
+DOM = "languages/javascript/dom.md"
+"Events & Animation" = "languages/javascript/events-animation.md"
+AJAX = "languages/javascript/ajax.md"
+jQuery = "languages/javascript/jquery.md"
+Svelte = "languages/javascript/svelte/svelte.md"
+
+[[nav.Languages.Javascript.React]]
+React = "languages/javascript/react/react.md"
+"React Router" = "languages/javascript/react/react-router.md"
+"React Tests" = "languages/javascript/react/react-tests.md"
+Redux = "languages/javascript/react/redux.md"
+"Redux Tests" = "languages/javascript/react/redux-tests.md"
+
+[[nav.Languages.PowerShell]]
+Scripting = "languages/powershell/scripting.md"
+Commands = "languages/powershell/commands.md"
+
+[[nav.Languages.Bash]]
+Scripting = "languages/bash/scripting.md"
+Commands = "languages/bash/commands.md"
+
+[[nav.Misc]]
+GraphQL = "misc/graph-ql.md"
+RegEx = "misc/regular-expressions.md"
+SSH = "misc/ssh.md"
+WebComponents = "misc/web-components.md"
+
+[[nav.Misc.VCS]]
+Git = "misc/vcs/git.md"
+JJ = "misc/vcs/jj.md"
+
+[[nav.Linux.Filesystem]]
+"File Links" = "linux/filesystem/file-links.md"
+"/proc" = "linux/filesystem/procfs.md"
+"/sys" = "linux/filesystem/sysfs.md"
+
+[[nav.Linux."System Init"]]
+Systemd = "linux/init/systemd.md"
+OpenRC = "linux/init/open-rc.md"
+Runit = "linux/init/runit.md"
