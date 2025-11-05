@@ -10,8 +10,8 @@
 
 ### Showing Changes
 
-`jj show [<revset>]`: show changes in `<revset>`, compared to its parents
-`jj diff [-f|--from <revset>] [-t|--to <revset>]`: compare file contents between revisions
+`jj show [<revset>]`: show changes in `<revset>`, compared to its parents  
+`jj diff [-f|--from <revset>] [-t|--to <revset>]`: compare file contents between revisions  
 
 ### Describing & Creating Commits
 
@@ -30,25 +30,25 @@
 ### Rebasing Commits
 
 `jj rebase --source <source> --destination <destination>`: rebase `<source>` and descendants onto `<destination>`  
-`jj rebase --source <source> --insert-after|--after <destination>`: insert `<source>` and descendants after `<destination>`  
-`jj rebase --source <source> --insert--before|--before <destination>`: insert `<source>` and descendants before `<destination>`  
+`jj rebase --source <source> --after <destination>`: insert `<source>` and descendants after `<destination>`  
+`jj rebase --source <source> --before <destination>`: insert `<source>` and descendants before `<destination>`  
 
 ### Squashing & Splitting Commits
 
 `jj squash [-i|--interactive]`: move changes from current revision (`@`) into its parent  
-`jj squash -f|--from <source> --t|--to|--into <destination>`: move changes from `<source>` into `<destination>`  
+`jj squash -f|--from <source> -t|--to <destination>`: move changes from `<source>` into `<destination>`  
 
 `jj split [-i|--interactive]`: split a revision in two  
 
 ### Signing Commits
 
-`jj sign --key <signing-key> -r|--revisions <revset>`: cryptographically sign a revision
+`jj sign --key <signing-key> -r|--revisions <revset>`: cryptographically sign a revision  
 
 ### Managing Bookmarks
 
-`jj bookmark set <bookmark> -r|--revision|--to <revset>`: create or update a bookmark to point to a certain commit  
-`jj bookmark move <bookmark> -r|--revision|--to <revset> [--allow-backwards]`: move bookmark `<bookmark>` to point to `<revset>`  
-`jj bookmark create <bookmark> -r|--revision|--to <revset>`: create `<bookmark>` pointing to `<revset>`  
+`jj bookmark set <bookmark> --to <revset>`: create or update a bookmark to point to a certain commit  
+`jj bookmark move <bookmark> --to <revset> [--allow-backwards]`: move bookmark `<bookmark>` to point to `<revset>`  
+`jj bookmark create <bookmark> --to <revset>`: create `<bookmark>` pointing to `<revset>`  
 
 ## Git Commands
 
