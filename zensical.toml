@@ -46,7 +46,7 @@ icon = "fontawesome/brands/github"
 link = "https://github.com/m-lamonaca"
 
 [project.theme]
-variant = "classic"
+# variant = "classic"
 language = "en"
 icon.logo = "fontawesome/solid/code"
 features = [
