@@ -18,12 +18,12 @@ than any other executable, making it lightweight.
 By contrast, a **virtual machine** (VM) runs a full-blown "guest" operating system with *virtual* access to host resources through a hypervisor. In general,
 VMs incur a lot of overhead beyond what is being consumed by your application logic.
 
-![container-architecture](../img/docker_container-architecture.svg "Container Architecture")
-![vm-architecture](../img/docker_virtual-machine-architecture.svg "Virtual Machine Architecture")
+![container-architecture](../assets/docker_container-architecture.svg "Container Architecture")
+![vm-architecture](../assets/docker_virtual-machine-architecture.svg "Virtual Machine Architecture")
 
 ## [Docker Terminology](https://docs.docker.com/glossary/)
 
-![docker-architecture](../img/docker_architecture.svg "Docker Architecture")
+![docker-architecture](../assets/docker_architecture.svg "Docker Architecture")
 
 **Container image**: A package with all the dependencies and information needed to create a container. An image includes all the dependencies (such as frameworks) plus deployment and execution configuration to be used by a container runtime. Usually, an image derives from multiple base images that are layers stacked on top of each other to form the container’s filesystem. An image is immutable once it has been created.
 
