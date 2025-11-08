@@ -262,7 +262,7 @@ Indexes are special data structures that store a small portion of the collection
 
 Indexes _slow down writing operations_ since the index must be updated at every writing.
 
-![IXSCAN](../img/mongodb_ixscan.avif ".find() using an index")
+![IXSCAN](../assets/mongodb_ixscan.avif ".find() using an index")
 
 ### [Index Types](https://docs.mongodb.com/manual/indexes/#index-types)
 

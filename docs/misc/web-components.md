@@ -241,4 +241,4 @@ Slots are identified by their _name attribute_, and allow to define placeholders
 [using-cusotom-elements-mdn]: https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements "Using Custom Elements"
 [using-shadow-dom-mdn]: https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM "Using Shadow DOM"
 [using-template-slots-mdn]: https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_templates_and_slots "Using Templates and Slots"
-[shadow-dom-schema]: ../img/webcomponents_shadowdom.svg
+[shadow-dom-schema]: ../assets/webcomponents_shadowdom.svg

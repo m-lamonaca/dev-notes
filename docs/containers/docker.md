@@ -18,7 +18,7 @@ than any other executable, making it lightweight.
 By contrast, a **virtual machine** (VM) runs a full-blown "guest" operating system with *virtual* access to host resources through a hypervisor. In general,
 VMs incur a lot of overhead beyond what is being consumed by your application logic.
 
-![container-architecture](../img/docker_container-architecture.svg "Container Architecture")
+![container-architecture](../assets/docker_container-architecture.svg "Container Architecture")
 ![vm-architecture](../img/docker_virtual-machine-architecture.svg "Virtual Machine Architecture")
 
 ## [Docker Terminology](https://docs.docker.com/glossary/)
