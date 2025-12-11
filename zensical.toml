@@ -46,7 +46,6 @@ link = "https://github.com/m-lamonaca"
 [project.theme]
 # variant = "classic"
 language = "en"
-icon.logo = "fontawesome/solid/code"
 features = [
     "content.code.copy",
     "content.code.select",
@@ -65,6 +64,12 @@ features = [
     "search.highlight",
     "toc.follow",
 ]
+
+[project.theme.icon]
+logo = "fontawesome/solid/code"
+repo = "fontawesome/brands/square-git"
+previous = "fontawesome/solid/angle-left"
+next = "fontawesome/solid/angle-right"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
