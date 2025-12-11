@@ -1,5 +1,7 @@
 # Docker
 
+> It is possible to use [`podman`](https://podman.io) for a drop-in replacement of `docker`
+
 ## Images & Containers
 
 > **Containerization** is an approach to software development in which an application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image.
