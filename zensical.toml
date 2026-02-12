@@ -7,7 +7,7 @@ remote_branch = "gh-pages"
 remote_name = "origin"
 site_url = "https://m-lamonaca.github.io/dev-notes"
 site_author = "Marcello Lamonaca"
-copyright = "MIT"
+copyright = "CC-BY-4.0"
 
 docs_dir = "docs"
 site_dir = "site"
