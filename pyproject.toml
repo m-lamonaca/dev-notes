@@ -8,6 +8,6 @@ authors = ["Marcello Lamonaca <marcello@lamonaca.eu>"]
 requires-python = ">=3.12"
 dependencies = [
     "pillow>=11.3",
-    "cairosvg>=2.8",
+    "cairosvg>=2.9.0",
     "zensical>=0.0.3",
 ]
