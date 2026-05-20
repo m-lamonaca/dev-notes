@@ -10,7 +10,7 @@ site_author = "Marcello Lamonaca"
 copyright = "CC-BY-4.0"
 
 docs_dir = "docs"
-site_dir = "site"
+site_dir = "public"
 
 [project.markdown_extensions.pymdownx.highlight]
 anchor_linenums = true

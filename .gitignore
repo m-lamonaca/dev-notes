@@ -1,5 +1,8 @@
 .venv
 .cache
 .obsidian
-site
 trace.json
+
+# output folder
+site
+public
