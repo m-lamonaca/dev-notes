@@ -1,12 +1,9 @@
 [project]
 site_name = "Dev Notes"
-repo_url = "https://github.com/m-lamonaca/dev-notes"
-repo_name = "m-lamonaca/dev-notes"
-edit_uri = "/edit/main/docs"
-remote_branch = "gh-pages"
-remote_name = "origin"
-site_url = "https://m-lamonaca.github.io/dev-notes"
+site_url = "https://code.lamonaca.dev/m-lamonaca/dev-notes"
 site_author = "Marcello Lamonaca"
+repo_url = "https://code.lamonaca.dev/m-lamonaca/dev-notes"
+repo_name = "m-lamonaca/dev-notes"
 copyright = "CC-BY-4.0"
 
 docs_dir = "docs"
@@ -33,15 +30,14 @@ line_spans = "__span"
     "setup/extensions/*"
 ]
 
-# [project.plugins.offline]
- 
+
 [[project.extra.social]]
 icon = "fontawesome/brands/mastodon"
 link = "https://hachyderm.io/@m_lamonaca"
 
 [[project.extra.social]]
-icon = "fontawesome/brands/github"
-link = "https://github.com/m-lamonaca"
+icon = "fontawesome/brands/git-alt"
+link = "https://code.lamonaca.dev/m-lamonaca/dev-notes"
 
 [project.theme]
 # variant = "classic"
@@ -67,7 +63,7 @@ features = [
 
 [project.theme.icon]
 logo = "fontawesome/solid/code"
-repo = "fontawesome/brands/square-git"
+repo = "fontawesome/brands/git-alt"
 previous = "fontawesome/solid/angle-left"
 next = "fontawesome/solid/angle-right"
 
