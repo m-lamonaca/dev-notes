@@ -30,6 +30,9 @@ line_spans = "__span"
     "setup/extensions/*"
 ]
 
+[[project.extra.social]]
+icon = "fontawesome/solid/globe"
+link = "https://lamonaca.dev"
 
 [[project.extra.social]]
 icon = "fontawesome/brands/mastodon"
