@@ -18,12 +18,10 @@ than any other executable, making it lightweight.
 By contrast, a **virtual machine** (VM) runs a full-blown "guest" operating system with *virtual* access to host resources through a hypervisor. In general,
 VMs incur a lot of overhead beyond what is being consumed by your application logic.
 
-![container-architecture](../assets/podman_container-architecture.svg "Container Architecture")
-![vm-architecture](../assets/podman_virtual-machine-architecture.svg "Virtual Machine Architecture")
+![container-architecture](container-architecture.svg "Container Architecture")
+![vm-architecture](virtual-machine-architecture.svg "Virtual Machine Architecture")
 
-## [Podman Terminology](https://docs.docker.com/glossary/)
-
-![podman-architecture](../assets/podman_architecture.svg "Podman Architecture")
+## [Terminology](https://docs.docker.com/glossary/)
 
 **Container image**: A package with all the dependencies and information needed to create a container. An image includes all the dependencies (such as frameworks) plus deployment and execution configuration to be used by a container runtime. Usually, an image derives from multiple base images that are layers stacked on top of each other to form the container’s filesystem. An image is immutable once it has been created.
 
