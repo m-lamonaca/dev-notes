@@ -92,7 +92,7 @@ toggle = { icon = "material/brightness-auto", name = "Switch to light mode" }
 Home = "README.md"
 
 [[nav.Containers]]
-Docker = "containers/docker.md"
+Podman = "containers/podman.md"
 Kubernetes = "containers/kubernetes.md"
 
 [[nav.Databases]]
