@@ -568,8 +568,10 @@ Specified w/ HEX RGB codes.
 
 #### IMAGES
 
+```py
 imgobj = PhotoImage(file='filename')
 label['image'] = imgobj
+```
 
 #### IMAGES W/ Pillow
 

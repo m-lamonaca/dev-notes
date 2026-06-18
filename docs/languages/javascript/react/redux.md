@@ -411,7 +411,6 @@ The `payloadCreator` function will be called with two arguments:
   - `extra`: the "extra argument" given to the thunk middleware on setup, if available
   - `requestId`: a unique string ID value that was automatically generated to identify this request sequence
   - `signal`: an `AbortController.signal` object that may be used to see if another part of the app logic has marked this request as needing cancellation.
-  - [...]
 
 The logic in the `payloadCreator` function may use any of these values as needed to calculate the result.
 

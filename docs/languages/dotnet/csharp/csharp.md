@@ -722,12 +722,12 @@ Both of these are designed primarily for code generation scenarios, although the
 
 | Syntax              | Operation                                                           |
 | ------------------- | ------------------------------------------------------------------- |
-| x`.`m               | access to member `m` of object `x` ("." --> member access operator) |
-| x`(...)`            | method invocation ("()" --> method invocation operator)             |
-| x`[...]`            | array access                                                        |
-| `new` T(...)        | object instantiation                                                |
-| `new` T(...)`{...}` | object instantiation with initial values                            |
-| `new` T[...]        | array creation                                                      |
+| `x.m`               | access to member `m` of object `x` ("." --> member access operator) |
+| `x(...)`            | method invocation ("()" --> method invocation operator)             |
+| `x[...]`            | array access                                                        |
+| `new T(...)`        | object instantiation                                                |
+| `new T(...){...}`   | object instantiation with initial values                            |
+| `new T[...]`        | array creation                                                      |
 | `typeof(T)`         | System.Type of object x                                             |
 | `nameof(x)`         | name of variable x                                                  |
 | `sizeof(x)`         | size of variable x                                                  |

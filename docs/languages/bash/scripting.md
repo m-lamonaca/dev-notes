@@ -122,7 +122,7 @@ x>&-, x<&-  # close FD x (stream disconnected from FD x)
 [x]<>file  # open FD x for both reading and writing to file
 ```
 
-## Pathname Expansion (filname pattern [glob] matching)
+## Pathname Expansion (filname pattern matching)
 
 `*` matches any kind of text (even no text).  
 `?` matches any single character.  
