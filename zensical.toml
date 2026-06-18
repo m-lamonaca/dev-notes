@@ -64,6 +64,10 @@ features = [
     "toc.follow",
 ]
 
+[project.theme.font]
+text = "Atkinson Hyperlegible Next"
+code = "Atkinson Hyperlegible Mono"
+
 [project.theme.icon]
 logo = "fontawesome/solid/code"
 repo = "fontawesome/brands/git-alt"
