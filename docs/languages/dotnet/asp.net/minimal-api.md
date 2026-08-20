@@ -374,14 +374,26 @@ The *options pattern* uses classes to provide strongly-typed access to groups of
 public class TransientFaultHandlingOptions
 {
     public bool Enabled { get; set; }
+
+    [RequiredIf(nameof(Enabled))]
     public TimeSpan AutoRetryDelay { get; set; }
 }
 ```
 
 ```cs
 // setup the options
-builder.Services.Configure<TransientFaultHandlingOptions>(builder.Configuration.GetSection<TransientFaultHandlingOptions>(nameof(Options)));
-builder.Services.Configure<TransientFaultHandlingOptions>(builder.Configuration.GetSection<TransientFaultHandlingOptions>(key));
+builder.Services
+    .AddOptions<TransientFaultHandlingOptions>()
+    .BindConfiguration("TransientFaultHandlingOptions")
+    .ValidateDataAnnotations()
+    .ValidateOnStart();
+
+// or
+builder.Services
+    .AddOptions<TransientFaultHandlingOptions>()
+    .Bind(builder.Configuration.GetSection("TransientFaultHandlingOptions"))
+    .ValidateDataAnnotations()
+    .ValidateOnStart();
 ```
 
 ```cs
