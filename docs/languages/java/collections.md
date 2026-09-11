@@ -1,4 +1,4 @@
-# Java Collection Framework - JCF
+# Collections
 
 All classes that permit the handling of groups of objects constitute the Java Collection Framework.
 

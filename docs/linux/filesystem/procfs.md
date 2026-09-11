@@ -1,4 +1,4 @@
-# `/proc` Filesystem
+# `/proc`
 
 The proc file system contains a hierarchy of special files that represent the current state of the kernel.
 

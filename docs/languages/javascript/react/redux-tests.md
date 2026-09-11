@@ -1,4 +1,4 @@
-# Redux Testing
+# Redux Tests
 
 ## Tests for Connected Components
 

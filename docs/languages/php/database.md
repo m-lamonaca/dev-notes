@@ -1,4 +1,4 @@
-# Databases in PHP
+# Database
 
 ## PHP Data Objects ([PDO][pdo])
 

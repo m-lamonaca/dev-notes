@@ -1,4 +1,4 @@
-# Cargo build system and package manager
+# Cargo
 
 ## Creating a project
 

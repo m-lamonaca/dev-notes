@@ -1,4 +1,4 @@
-# Socket Module
+# Socket
 
 ## Definition
 

@@ -1,4 +1,4 @@
-# Testing React
+# React Tests
 
 ## [Jest](https://jestjs.io/)
 

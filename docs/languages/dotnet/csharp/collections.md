@@ -1,4 +1,4 @@
-# C# Collections
+# Collections
 
 ## Arrays
 

@@ -1,4 +1,4 @@
-# `/sys` Filesystem (`sysfs`)
+# `/sys`
 
 ## `sysfs` Directories
 

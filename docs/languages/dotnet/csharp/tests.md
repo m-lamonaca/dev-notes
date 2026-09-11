@@ -1,7 +1,4 @@
-# Unit Testing
-
-[UnitTest Overloaded Methods](https://stackoverflow.com/a/5666591/8319610)
-[Naming standards for unit tests](https://osherove.com/blog/2005/4/3/naming-standards-for-unit-tests.html)
+# Tests
 
 ## xUnit
 

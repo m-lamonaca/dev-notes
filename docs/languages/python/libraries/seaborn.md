@@ -1,4 +1,4 @@
-# Seaborn Lib
+# Seaborn
 
 ## Basic Imports For Seaborn
 

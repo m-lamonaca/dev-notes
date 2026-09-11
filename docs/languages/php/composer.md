@@ -1,4 +1,4 @@
-# Composer & Autoloading
+# Composer
 
 ## Autoloading
 

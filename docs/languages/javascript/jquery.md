@@ -1,4 +1,4 @@
-# jQuery Library
+# jQuery
 
 ## Including jQuery
 

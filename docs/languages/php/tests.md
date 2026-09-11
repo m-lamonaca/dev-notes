@@ -1,4 +1,4 @@
-# PHP Unit Test
+# Test
 
 ## Installation & Configuration
 

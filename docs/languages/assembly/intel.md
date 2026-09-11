@@ -1,4 +1,4 @@
-# Assembly (Intel)
+# Intel
 
 ## Compiling & Linking
 

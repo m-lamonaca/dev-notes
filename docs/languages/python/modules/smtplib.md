@@ -1,4 +1,4 @@
-# SMTPlib Module
+# SMTPlib
 
 ```python
 import smtplib

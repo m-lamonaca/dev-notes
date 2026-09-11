@@ -1,4 +1,4 @@
-# Symlink, Hardlink, Reflink
+# Links
 
 Unix files consist of two parts: the *data part* and the *filename part*.  
 The data part is associated with something called an **inode**. The inode carries the map of where the data is, the file permissions, etc. for the data.

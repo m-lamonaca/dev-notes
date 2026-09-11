@@ -1,4 +1,4 @@
-# Logging Module
+# Logging
 
 ## Configuration
 

@@ -1,4 +1,4 @@
-# Reactive Extensions (Rx)
+# Reactive Extensions
 
 [ReactiveX](https://reactivex.io "ReactiveX website")
 

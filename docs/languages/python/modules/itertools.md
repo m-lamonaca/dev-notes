@@ -1,4 +1,4 @@
-# Itertools Module
+# Itertools
 
 ``` py
 # accumulate ([1,2,3,4,5]) -> 1, 3 (1 + 2), 6 (1 + 2 + 3), 10 (1 + 2 + 3 + 6), 15 (1+ 2 + 3 + 4 + 5)

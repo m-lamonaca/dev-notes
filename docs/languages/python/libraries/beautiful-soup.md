@@ -1,4 +1,4 @@
-# [Beautiful Soup Library](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+# [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 ## Making the Soup
 

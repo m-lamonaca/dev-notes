@@ -1,4 +1,4 @@
-# Ftplib Module
+# FTPlib
 
 ## FTP CLASSES
 

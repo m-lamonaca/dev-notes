@@ -1,4 +1,4 @@
-# Markdown Notes
+# Markdown
 
 ## Headings
 

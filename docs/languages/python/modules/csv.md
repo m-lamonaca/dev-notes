@@ -1,5 +1,4 @@
-
-# CSV Module
+# CSV
 
 ``` python
 # iterate lines of csvfile

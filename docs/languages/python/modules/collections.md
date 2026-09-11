@@ -1,5 +1,4 @@
-
-# Collections Module
+# Collections
 
 ``` py
 # COUNTER ()

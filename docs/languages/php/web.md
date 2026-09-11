@@ -1,4 +1,4 @@
-# PHP for the Web
+# Web
 
 ## PHP Internal Web Server
 

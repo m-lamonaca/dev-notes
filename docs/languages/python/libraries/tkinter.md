@@ -1,4 +1,4 @@
-# Tkinter Module/Library
+# Tkinter
 
 ## Standard Imports
 

@@ -1,4 +1,4 @@
-# sqlite3 Module
+# Sqlite
 
 ## Connecting To The Database
 

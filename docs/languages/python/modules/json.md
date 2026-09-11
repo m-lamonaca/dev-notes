@@ -1,4 +1,4 @@
-# JSON Module
+# JSON
 
 ## JSON Format
 

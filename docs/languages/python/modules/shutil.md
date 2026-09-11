@@ -1,4 +1,4 @@
-# Shutil Module
+# Shutil
 
 High-level file operations
 
